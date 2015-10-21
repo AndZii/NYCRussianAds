@@ -11,24 +11,36 @@
 @interface CreateAdViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+
 @property (weak, nonatomic) IBOutlet UITextView *textAdField;
+@property (weak, nonatomic) IBOutlet UILabel *SubjectLable;
 
 @end
 
 @implementation CreateAdViewController
 
 
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:YES];
+-(void) viewDidLoad {
     
+    [super viewDidLoad];
     
-    self.navigationController.navigationBar.topItem.title = @"Добавить новое объявление";
-    
-
-    
-
+    self.SubjectLable.text = [NSString stringWithFormat:@"%@ %@", self.SubjectLable.text,  self.subject];
     
 }
+
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [super viewDidAppear:YES];
+    
+}
+
+#pragma mark - Actions
+- (IBAction)cancelButtonPressed:(UIButton*)sender {
+    
+     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 - (IBAction)sendButtonPressed:(id)sender {
     
     PFObject *newAd   = [PFObject objectWithClassName:@"Ad"];
@@ -40,7 +52,9 @@
     newAd[@"Subject"] = self.subject;
     
     PFUser *user = [PFUser currentUser];
+    
     PFRelation *relation = [newAd relationForKey:@"posted_by"];
+    
     [relation addObject:user];
     
     [newAd saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
@@ -61,9 +75,5 @@
     
 }
 
-- (IBAction)cancelButtonPressed:(UIButton *)sender {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
+
 @end

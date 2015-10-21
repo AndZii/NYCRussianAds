@@ -12,9 +12,12 @@
 #import "AdsDisplayController.h"
 #import <Parse/Parse.h>
 #import "Ad.h"
+
 @interface SelectTypeOfSubjectController ()
 
 @property (strong, nonatomic) NSArray * arrayWithTypesOfSubjects;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addNewAdButton;
 
 @end
 
@@ -39,9 +42,11 @@
         
     }
     
+   
 }
 
 -(void) viewDidAppear:(BOOL)animated {
+    
     
     [super viewDidAppear:YES];
     
@@ -53,6 +58,7 @@
     [super didReceiveMemoryWarning];
 
 }
+
 
 #pragma mark - UITableViewDataSource
 

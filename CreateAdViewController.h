@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateAdViewController : UIViewController
+
 @property (strong, nonatomic) NSString * subject;
+
+-(void) cancelButton:(UIBarButtonItem *) sender;
+
 @end

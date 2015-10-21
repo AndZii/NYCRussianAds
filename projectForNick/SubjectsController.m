@@ -11,6 +11,7 @@
 #import "AdsDisplayController.h"
 #import <Parse/Parse.h>
 #import "Ad.h"
+
 @interface SubjectsController ()
 
 @end
@@ -18,13 +19,15 @@
 @implementation SubjectsController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
-    
+ 
     
 }
 
 -(void) viewDidAppear:(BOOL)animated {
+    
     
     [super viewDidAppear:YES];
     
@@ -33,10 +36,12 @@
 }
 
 - (void)didReceiveMemoryWarning {
+    
     [super didReceiveMemoryWarning];
    
     
 }
+
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -75,7 +80,11 @@
         
         createAdViewController.subject = [self.subjectsArray objectAtIndex:indexPath.row];
         
-        [self.navigationController pushViewController:createAdViewController animated:YES];
+        [self presentViewController:createAdViewController animated:YES completion:^{
+            
+            [self.navigationController popToRootViewControllerAnimated:YES];
+            
+        }];
         
     } else {
         

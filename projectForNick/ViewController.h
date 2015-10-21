@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 @interface ViewController : UITableViewController
 
+@property (strong, nonatomic) UIImage * profile_picture;
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  SelectTypeOfSubjectController.h
+//  UIFont+SystemFontOverride.h
 //  NYCRussianAds
 //
 //  Created by Andrii Zykov on 10/21/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SelectTypeOfSubjectController : UITableViewController
-
-@property (assign, nonatomic) BOOL creationOfNewAd;
+@interface UIFont (SystemFontOverride)
 
 @end

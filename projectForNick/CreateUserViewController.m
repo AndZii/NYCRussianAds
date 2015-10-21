@@ -11,15 +11,22 @@
 @interface CreateUserViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+
 @property (weak, nonatomic) IBOutlet UITextField *passwordConfirmationField;
+
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+
 @property (weak, nonatomic) IBOutlet UIButton *createButton;
+
 @end
 
 
 @implementation CreateUserViewController
+
 - (IBAction)createNewUserPressed:(UIButton *)sender {
 
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"Wrong info" message:@"" preferredStyle:UIAlertControllerStyleAlert];

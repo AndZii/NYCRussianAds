@@ -9,8 +9,11 @@
 #import "AZLogInViewController.h"
 #import <Parse/Parse.h>
 #import "CreateUserViewController.h"
+
 @interface AZLogInViewController () <UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
@@ -28,11 +31,15 @@
 }
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
     self.passwordTextField.delegate = self;
+    
     self.userNameTextField.delegate = self;
+    
     self.passwordTextField.returnKeyType = UIReturnKeyGo;
+    
     //set up view controller
     
     
@@ -50,7 +57,9 @@
     }
     
     if ([PFUser currentUser]) {
+        
         [self dismissViewControllerAnimated:YES completion:nil];
+        
     }
     
 }
