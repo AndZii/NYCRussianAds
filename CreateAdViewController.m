@@ -31,11 +31,13 @@
 }
 - (IBAction)sendButtonPressed:(id)sender {
     
-    PFObject *newAd = [PFObject objectWithClassName:@"Ad"];
+    PFObject *newAd   = [PFObject objectWithClassName:@"Ad"];
     
-    newAd[@"Title"] = self.titleTextField.text;
+    newAd[@"Title"]   = self.titleTextField.text;
     
-    newAd[@"Text"]  = self.textAdField.text;
+    newAd[@"Text"]    = self.textAdField.text;
+    
+    newAd[@"Subject"] = self.subject;
     
     PFUser *user = [PFUser currentUser];
     PFRelation *relation = [newAd relationForKey:@"posted_by"];
@@ -45,7 +47,7 @@
         
         if (succeeded) {
             
-            [self.navigationController popViewControllerAnimated:YES];
+            [self.navigationController popToRootViewControllerAnimated:YES];
             
         } else {
             

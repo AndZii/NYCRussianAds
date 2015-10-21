@@ -11,6 +11,7 @@
 #import "CreateAdViewController.h"
 #import "Ad.h"
 #import "AdsDisplayController.h"
+#import "SelectTypeOfSubjectController.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (![PFUser currentUser]) {
+        
+        AZLogInViewController * logInViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
+        
+        [self presentViewController:logInViewController animated:YES completion:nil];
+        
+    }
     
 }
 
@@ -31,13 +40,7 @@
     
     [super viewDidAppear:YES];
     
-    if (![PFUser currentUser]) {
-        
-        AZLogInViewController * logInViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"LogInViewController"];
-        
-        [self presentViewController:logInViewController animated:YES completion:nil];
-        
-    }
+ 
     
 
     self.navigationController.navigationBar.topItem.title =  [NSString stringWithFormat:@"Пользователь, %@",[PFUser currentUser].username ];
@@ -45,9 +48,44 @@
     
 }
 
-#pragma mark - buttons
+#pragma mark - Actions
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UITableViewCell * cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if ([cell.reuseIdentifier isEqualToString:@"logout"]) {
+        
+        [self logout];
+        
+    }
+    
+    if ([cell.reuseIdentifier isEqualToString:@"allAds"]) {
+        
+        [self showAllAds];
+        
+    }
+    
+    if ([cell.reuseIdentifier isEqualToString:@"myAds"]) {
+        
+        [self showMyAdsOnly];
+        
+    }
+    
+    if ([cell.reuseIdentifier isEqualToString:@"postAd"]) {
+        
+        [self addNewAd];
+        
+    }
+    
+}
 
-- (IBAction)signOutButtonPressed:(UIBarButtonItem *)sender {
+
+
+#pragma mark - main logic
+
+-(void) logout{
     
     [PFUser logOut];
     
@@ -58,29 +96,19 @@
     
 }
 
-
-- (IBAction)postNewAd:(UIButton *)sender {
-    
-    CreateAdViewController * createAdViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CreateAdViewController"];
-    
-    [self.navigationController pushViewController:createAdViewController animated:YES];
-    
-}
-- (IBAction)myAddsButtonPressed:(id)sender {
+-(void) showMyAdsOnly {
     
     PFQuery * myQuery = [PFQuery queryWithClassName:@"Ad"];
     
     [myQuery whereKey:@"posted_by" equalTo:[PFUser currentUser]];
     
     [myQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
-       
+        
         if (!error) {
             
             NSArray * adsArray = [Ad fetchAdsFromServerWithArray:objects];
             
             AdsDisplayController * adsDisplayViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AdDisplay"];
-            
-            NSLog(@"%li", [adsArray count]);
             
             adsDisplayViewController.arrayOfAds = adsArray;
             
@@ -93,6 +121,26 @@
         }
         
     }];
+    
+}
+
+-(void) showAllAds {
+    
+    SelectTypeOfSubjectController * subjectTypeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SubjectTypeController"];
+    
+    subjectTypeViewController.creationOfNewAd = NO;
+    
+    [self.navigationController pushViewController:subjectTypeViewController animated:YES];
+    
+}
+
+-(void) addNewAd {
+    
+    SelectTypeOfSubjectController * subjectTypeViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SubjectTypeController"];
+    
+    subjectTypeViewController.creationOfNewAd = YES;
+    
+    [self.navigationController pushViewController:subjectTypeViewController animated:YES];
     
 }
 

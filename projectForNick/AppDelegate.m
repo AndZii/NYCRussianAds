@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "AZLogInViewController.h"
+#import <UIKit/UIKit.h>
+
 @interface AppDelegate ()
 
 @end
@@ -19,7 +22,6 @@
 
     [Parse setApplicationId:@"YH96hP9QGrr4UAiqInMDJ5jZqxIBp7s7uUVVy7ky"
                   clientKey:@"0jBPsiAyZ1TNKUZIQMgbvTBbSqBpI85TRfIOaRer"];
-    
     
     return YES;
 }

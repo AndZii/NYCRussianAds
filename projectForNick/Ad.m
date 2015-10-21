@@ -28,6 +28,8 @@
         
         ad.posted_by = (PFUser*) user;
         
+        ad.created_at =  [obj valueForKey:@"createdAt"];
+        
         [adsArray addObject:ad];
     }
     

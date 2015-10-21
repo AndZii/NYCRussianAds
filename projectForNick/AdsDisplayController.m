@@ -8,6 +8,7 @@
 
 #import "AdsDisplayController.h"
 #import "Ad.h"
+#import <Parse/Parse.h>
 @interface AdsDisplayController ()
 
 @end
@@ -23,8 +24,6 @@
     
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString * cellIdentifire = @"cell";
@@ -33,13 +32,21 @@
     
     if (!cell) {
         
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifire];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifire];
         
     }
     
     Ad * ad = [self.arrayOfAds objectAtIndex:indexPath.row];
-
-   cell.textLabel.text = ad.title;
+    
+    cell.textLabel.text = ad.title;
+    
+    NSDateFormatter * dateFormatter = [NSDateFormatter new];
+    
+    [dateFormatter setDateFormat:@"MM/dd/yyyy в HH:mm"];
+    
+    NSString * createAtString = [NSString stringWithFormat:@"добавлена: %@", [dateFormatter stringFromDate:ad.created_at]];
+    
+    cell.detailTextLabel.text = createAtString;
     
     return cell;
     

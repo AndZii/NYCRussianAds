@@ -9,35 +9,19 @@
 #import "CreateUserViewController.h"
 #import <Parse/Parse.h>
 @interface CreateUserViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordConfirmationField;
 @property (weak, nonatomic) IBOutlet UIButton *cancelButton;
-
 @property (weak, nonatomic) IBOutlet UIButton *createButton;
 @end
 
 
 @implementation CreateUserViewController
 - (IBAction)createNewUserPressed:(UIButton *)sender {
-    
-   
-    
-//    if ([self.userNameTextField.text isEqualToString:@""] ||
-//        [self.emailTextField.text isEqualToString:@""] ||
-//        [self.passwordField.text isEqualToString:@""] ||
-//        [self.passwordConfirmationField.text isEqualToString:@""]) {
-//        
-//        
-//        NSLog(@"wrong info"); // Need to add alerts!!!
-//        
-//        return;
-//        
-//    }
-//    
-    
-    
+
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"Wrong info" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction * alertAction = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleCancel handler:nil];

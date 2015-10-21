@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateAdViewController : UIViewController
-
+@property (strong, nonatomic) NSString * subject;
 @end
