@@ -47,15 +47,9 @@
         
         self.profile_picture = image;
         
-        [self setUpPicture];
-    } else {
-        
-        self.profile_picture = [UIImage imageNamed:@"no_picture.jpg"];
-        
-        [self setUpPicture];
     }
     
-   
+           [self setUpPicture];
     
     
     
@@ -248,29 +242,28 @@
 
 -(void) setUpPicture {
     
-    if (self.profile_picture) {
+        
+        if (!self.profile_picture) {
+            
+            self.profile_picture = [UIImage imageNamed:@"no_picture.jpg"];
+            
+        }
         
         self.profilePicture.image = self.profile_picture;
         
-        self.profilePicture.layer.cornerRadius = 80;
+        self.profilePicture.layer.cornerRadius = 85;
         
         self.profilePicture.frame = CGRectMake(0, 0, self.profile_picture.size.width, self.profile_picture.size.height);
         
         self.profilePicture.layer.borderWidth = 3.0f;
         
         self.profilePicture.clipsToBounds = true;
-        
-        self.profilePicture.layer.borderColor = [UIColor grayColor].CGColor;
-        
-        if ([self.profile_picture isEqual:[UIImage imageNamed:@"no_picture.jpg"]]) {
-        
+    
         self.profilePicture.layer.borderColor = [UIColor clearColor].CGColor;
-            
-        }
         
+        NSLog(@"%@", self.profile_picture);
         
-
-    }
+    
 }
 
 -(void) addProfilePicture {

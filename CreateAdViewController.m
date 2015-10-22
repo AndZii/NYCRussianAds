@@ -19,6 +19,9 @@
 
 @implementation CreateAdViewController
 
+-(void) cancelButton:(UIBarButtonItem *)sender {
+    
+}
 
 -(void) viewDidLoad {
     
@@ -61,7 +64,7 @@
         
         if (succeeded) {
             
-            [self.navigationController popToRootViewControllerAnimated:YES];
+            [self dismissViewControllerAnimated:YES completion:nil];
             
         } else {
             
