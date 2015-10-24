@@ -8,25 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		20931501573C5908C737DFDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A17650037BA2C30C011B59 /* libPods.a */; };
-		B525463C1BD80D8C004813D7 /* UIFont+SystemFontOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = B525463B1BD80D8C004813D7 /* UIFont+SystemFontOverride.m */; settings = {ASSET_TAGS = (); }; };
-		B52546411BD84BE0004813D7 /* no_picture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B52546401BD84BE0004813D7 /* no_picture.jpg */; settings = {ASSET_TAGS = (); }; };
 		B558DFA21BD34CD20010BB56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B558DFA11BD34CD20010BB56 /* main.m */; };
 		B558DFA51BD34CD20010BB56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B558DFA41BD34CD20010BB56 /* AppDelegate.m */; };
-		B558DFA81BD34CD20010BB56 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B558DFA71BD34CD20010BB56 /* ViewController.m */; };
 		B558DFAB1BD34CD30010BB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B558DFA91BD34CD20010BB56 /* Main.storyboard */; };
 		B558DFAE1BD34CD30010BB56 /* projectForNick.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B558DFAC1BD34CD30010BB56 /* projectForNick.xcdatamodeld */; };
 		B558DFB01BD34CD30010BB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B558DFAF1BD34CD30010BB56 /* Assets.xcassets */; };
 		B558DFB31BD34CD30010BB56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B558DFB11BD34CD30010BB56 /* LaunchScreen.storyboard */; };
 		B558DFBE1BD34CD40010BB56 /* projectForNickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B558DFBD1BD34CD40010BB56 /* projectForNickTests.m */; };
 		B558DFC91BD34CD40010BB56 /* projectForNickUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B558DFC81BD34CD40010BB56 /* projectForNickUITests.m */; };
-		B59171F41BD74C1C00C03618 /* SelectTypeOfSubjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59171F31BD74C1C00C03618 /* SelectTypeOfSubjectController.m */; settings = {ASSET_TAGS = (); }; };
 		B59171F81BD74F9100C03618 /* AZDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B59171F71BD74F9100C03618 /* AZDataManager.m */; settings = {ASSET_TAGS = (); }; };
-		B59171FB1BD7504500C03618 /* SubjectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B59171FA1BD7504500C03618 /* SubjectsController.m */; settings = {ASSET_TAGS = (); }; };
 		B5B145391BD354F40042F859 /* AZLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B145381BD354F40042F859 /* AZLogInViewController.m */; settings = {ASSET_TAGS = (); }; };
 		B5B1453C1BD363490042F859 /* CreateUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1453B1BD363490042F859 /* CreateUserViewController.m */; settings = {ASSET_TAGS = (); }; };
-		B5C4FB331BD49538007864BD /* CreateAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4FB321BD49538007864BD /* CreateAdViewController.m */; settings = {ASSET_TAGS = (); }; };
-		B5C4FB371BD49F5B007864BD /* AdsDisplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4FB361BD49F5B007864BD /* AdsDisplayController.m */; settings = {ASSET_TAGS = (); }; };
 		B5C4FB3B1BD49FDD007864BD /* Ad.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C4FB3A1BD49FDD007864BD /* Ad.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A5A1BDAA7F100EB0844 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A591BDAA7F100EB0844 /* AccountViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A5D1BDAA8E900EB0844 /* AllAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A5C1BDAA8E900EB0844 /* AllAdsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A691BDB466300EB0844 /* MainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A681BDB466300EB0844 /* MainTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A6E1BDB529A00EB0844 /* PlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A6D1BDB529A00EB0844 /* PlacesViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A721BDB549D00EB0844 /* AllAdsViewControllerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A711BDB549D00EB0844 /* AllAdsViewControllerCell.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A7E1BDBF54D00EB0844 /* CreateAd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E99A7D1BDBF54D00EB0844 /* CreateAd.storyboard */; settings = {ASSET_TAGS = (); }; };
+		B5E99A821BDBF59400EB0844 /* CreateAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A811BDBF59400EB0844 /* CreateAdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A851BDBFF3400EB0844 /* EnterTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A841BDBFF3400EB0844 /* EnterTitleViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A881BDC082100EB0844 /* EnterTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A871BDC082100EB0844 /* EnterTextViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A8B1BDC0C9900EB0844 /* UIViewController+AddHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A8A1BDC0C9900EB0844 /* UIViewController+AddHelpers.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A8E1BDC0F8900EB0844 /* DisplayAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A8D1BDC0F8900EB0844 /* DisplayAdViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B5E99A911BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E99A901BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +54,10 @@
 /* Begin PBXFileReference section */
 		B1BF4461A51B7E7C8005B69D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B3A17650037BA2C30C011B59 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B525463A1BD80D8C004813D7 /* UIFont+SystemFontOverride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SystemFontOverride.h"; sourceTree = "<group>"; };
-		B525463B1BD80D8C004813D7 /* UIFont+SystemFontOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SystemFontOverride.m"; sourceTree = "<group>"; };
-		B52546401BD84BE0004813D7 /* no_picture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = no_picture.jpg; sourceTree = "<group>"; };
 		B558DF9D1BD34CD20010BB56 /* NYCRussianAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCRussianAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B558DFA11BD34CD20010BB56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B558DFA31BD34CD20010BB56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B558DFA41BD34CD20010BB56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B558DFA61BD34CD20010BB56 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B558DFA71BD34CD20010BB56 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B558DFAA1BD34CD20010BB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B558DFAD1BD34CD30010BB56 /* projectForNick.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = projectForNick.xcdatamodel; sourceTree = "<group>"; };
 		B558DFAF1BD34CD30010BB56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,22 +69,37 @@
 		B558DFC41BD34CD40010BB56 /* NYCRussianAds.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCRussianAds.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B558DFC81BD34CD40010BB56 /* projectForNickUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = projectForNickUITests.m; sourceTree = "<group>"; };
 		B558DFCA1BD34CD40010BB56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B59171F21BD74C1C00C03618 /* SelectTypeOfSubjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectTypeOfSubjectController.h; sourceTree = "<group>"; };
-		B59171F31BD74C1C00C03618 /* SelectTypeOfSubjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTypeOfSubjectController.m; sourceTree = "<group>"; };
 		B59171F61BD74F9100C03618 /* AZDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDataManager.h; sourceTree = "<group>"; };
 		B59171F71BD74F9100C03618 /* AZDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDataManager.m; sourceTree = "<group>"; };
-		B59171F91BD7504500C03618 /* SubjectsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectsController.h; sourceTree = "<group>"; };
-		B59171FA1BD7504500C03618 /* SubjectsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectsController.m; sourceTree = "<group>"; };
 		B5B145371BD354F40042F859 /* AZLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZLogInViewController.h; sourceTree = "<group>"; };
 		B5B145381BD354F40042F859 /* AZLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZLogInViewController.m; sourceTree = "<group>"; };
 		B5B1453A1BD363490042F859 /* CreateUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateUserViewController.h; sourceTree = "<group>"; };
 		B5B1453B1BD363490042F859 /* CreateUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateUserViewController.m; sourceTree = "<group>"; };
-		B5C4FB311BD49538007864BD /* CreateAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CreateAdViewController.h; path = ../CreateAdViewController.h; sourceTree = "<group>"; };
-		B5C4FB321BD49538007864BD /* CreateAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CreateAdViewController.m; path = ../CreateAdViewController.m; sourceTree = "<group>"; };
-		B5C4FB351BD49F5B007864BD /* AdsDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsDisplayController.h; sourceTree = "<group>"; };
-		B5C4FB361BD49F5B007864BD /* AdsDisplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsDisplayController.m; sourceTree = "<group>"; };
 		B5C4FB391BD49FDD007864BD /* Ad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ad.h; sourceTree = "<group>"; };
 		B5C4FB3A1BD49FDD007864BD /* Ad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ad.m; sourceTree = "<group>"; };
+		B5E99A581BDAA7F100EB0844 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		B5E99A591BDAA7F100EB0844 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		B5E99A5B1BDAA8E900EB0844 /* AllAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAdsViewController.h; sourceTree = "<group>"; };
+		B5E99A5C1BDAA8E900EB0844 /* AllAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAdsViewController.m; sourceTree = "<group>"; };
+		B5E99A671BDB466300EB0844 /* MainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarController.h; sourceTree = "<group>"; };
+		B5E99A681BDB466300EB0844 /* MainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarController.m; sourceTree = "<group>"; };
+		B5E99A6C1BDB529A00EB0844 /* PlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlacesViewController.h; sourceTree = "<group>"; };
+		B5E99A6D1BDB529A00EB0844 /* PlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlacesViewController.m; sourceTree = "<group>"; };
+		B5E99A701BDB549D00EB0844 /* AllAdsViewControllerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAdsViewControllerCell.h; sourceTree = "<group>"; };
+		B5E99A711BDB549D00EB0844 /* AllAdsViewControllerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAdsViewControllerCell.m; sourceTree = "<group>"; };
+		B5E99A7D1BDBF54D00EB0844 /* CreateAd.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CreateAd.storyboard; path = ../CreateAd.storyboard; sourceTree = "<group>"; };
+		B5E99A801BDBF59400EB0844 /* CreateAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAdViewController.h; sourceTree = "<group>"; };
+		B5E99A811BDBF59400EB0844 /* CreateAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAdViewController.m; sourceTree = "<group>"; };
+		B5E99A831BDBFF3400EB0844 /* EnterTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterTitleViewController.h; sourceTree = "<group>"; };
+		B5E99A841BDBFF3400EB0844 /* EnterTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterTitleViewController.m; sourceTree = "<group>"; };
+		B5E99A861BDC082100EB0844 /* EnterTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterTextViewController.h; sourceTree = "<group>"; };
+		B5E99A871BDC082100EB0844 /* EnterTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterTextViewController.m; sourceTree = "<group>"; };
+		B5E99A891BDC0C9900EB0844 /* UIViewController+AddHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AddHelpers.h"; sourceTree = "<group>"; };
+		B5E99A8A1BDC0C9900EB0844 /* UIViewController+AddHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AddHelpers.m"; sourceTree = "<group>"; };
+		B5E99A8C1BDC0F8900EB0844 /* DisplayAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayAdViewController.h; sourceTree = "<group>"; };
+		B5E99A8D1BDC0F8900EB0844 /* DisplayAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayAdViewController.m; sourceTree = "<group>"; };
+		B5E99A8F1BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllAdsBuyCategoryTableViewController.h; sourceTree = "<group>"; };
+		B5E99A901BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllAdsBuyCategoryTableViewController.m; sourceTree = "<group>"; };
 		FF1512B5111E5B696D7A3E35 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,8 +143,8 @@
 			children = (
 				B558DFA31BD34CD20010BB56 /* AppDelegate.h */,
 				B558DFA41BD34CD20010BB56 /* AppDelegate.m */,
-				B525463A1BD80D8C004813D7 /* UIFont+SystemFontOverride.h */,
-				B525463B1BD80D8C004813D7 /* UIFont+SystemFontOverride.m */,
+				B5E99A891BDC0C9900EB0844 /* UIViewController+AddHelpers.h */,
+				B5E99A8A1BDC0C9900EB0844 /* UIViewController+AddHelpers.m */,
 			);
 			name = Setings;
 			sourceTree = "<group>";
@@ -159,13 +174,15 @@
 		B558DF9F1BD34CD20010BB56 /* projectForNick */ = {
 			isa = PBXGroup;
 			children = (
+				B5E99A6F1BDB547600EB0844 /* Cells */,
+				B5E99A091BD9E4F100EB0844 /* Resources */,
 				B525463D1BD80D99004813D7 /* Setings */,
 				B59171F51BD74F6100C03618 /* MainDataSource */,
-				B5C4FB381BD49FCC007864BD /* models */,
+				B5C4FB381BD49FCC007864BD /* Models */,
 				B5C4FB341BD4953F007864BD /* ViewControllers */,
 				B558DFA91BD34CD20010BB56 /* Main.storyboard */,
+				B5E99A7D1BDBF54D00EB0844 /* CreateAd.storyboard */,
 				B558DFAF1BD34CD30010BB56 /* Assets.xcassets */,
-				B52546401BD84BE0004813D7 /* no_picture.jpg */,
 				B558DFB11BD34CD30010BB56 /* LaunchScreen.storyboard */,
 				B558DFB41BD34CD30010BB56 /* Info.plist */,
 				B558DFAC1BD34CD30010BB56 /* projectForNick.xcdatamodeld */,
@@ -212,31 +229,63 @@
 		B5C4FB341BD4953F007864BD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B5C4FB311BD49538007864BD /* CreateAdViewController.h */,
-				B5C4FB321BD49538007864BD /* CreateAdViewController.m */,
-				B558DFA61BD34CD20010BB56 /* ViewController.h */,
-				B558DFA71BD34CD20010BB56 /* ViewController.m */,
+				B5E99A7F1BDBF57400EB0844 /* CreateAdViewControllers */,
+				B5E99A671BDB466300EB0844 /* MainTabBarController.h */,
+				B5E99A681BDB466300EB0844 /* MainTabBarController.m */,
 				B5B145371BD354F40042F859 /* AZLogInViewController.h */,
 				B5B145381BD354F40042F859 /* AZLogInViewController.m */,
 				B5B1453A1BD363490042F859 /* CreateUserViewController.h */,
 				B5B1453B1BD363490042F859 /* CreateUserViewController.m */,
-				B5C4FB351BD49F5B007864BD /* AdsDisplayController.h */,
-				B5C4FB361BD49F5B007864BD /* AdsDisplayController.m */,
-				B59171F21BD74C1C00C03618 /* SelectTypeOfSubjectController.h */,
-				B59171F31BD74C1C00C03618 /* SelectTypeOfSubjectController.m */,
-				B59171F91BD7504500C03618 /* SubjectsController.h */,
-				B59171FA1BD7504500C03618 /* SubjectsController.m */,
+				B5E99A581BDAA7F100EB0844 /* AccountViewController.h */,
+				B5E99A591BDAA7F100EB0844 /* AccountViewController.m */,
+				B5E99A5B1BDAA8E900EB0844 /* AllAdsViewController.h */,
+				B5E99A5C1BDAA8E900EB0844 /* AllAdsViewController.m */,
+				B5E99A6C1BDB529A00EB0844 /* PlacesViewController.h */,
+				B5E99A6D1BDB529A00EB0844 /* PlacesViewController.m */,
+				B5E99A8C1BDC0F8900EB0844 /* DisplayAdViewController.h */,
+				B5E99A8D1BDC0F8900EB0844 /* DisplayAdViewController.m */,
+				B5E99A8F1BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.h */,
+				B5E99A901BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		B5C4FB381BD49FCC007864BD /* models */ = {
+		B5C4FB381BD49FCC007864BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B5C4FB391BD49FDD007864BD /* Ad.h */,
 				B5C4FB3A1BD49FDD007864BD /* Ad.m */,
 			);
-			name = models;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B5E99A091BD9E4F100EB0844 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B5E99A6F1BDB547600EB0844 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B5E99A701BDB549D00EB0844 /* AllAdsViewControllerCell.h */,
+				B5E99A711BDB549D00EB0844 /* AllAdsViewControllerCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B5E99A7F1BDBF57400EB0844 /* CreateAdViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5E99A801BDBF59400EB0844 /* CreateAdViewController.h */,
+				B5E99A811BDBF59400EB0844 /* CreateAdViewController.m */,
+				B5E99A831BDBFF3400EB0844 /* EnterTitleViewController.h */,
+				B5E99A841BDBFF3400EB0844 /* EnterTitleViewController.m */,
+				B5E99A861BDC082100EB0844 /* EnterTextViewController.h */,
+				B5E99A871BDC082100EB0844 /* EnterTextViewController.m */,
+			);
+			name = CreateAdViewControllers;
 			sourceTree = "<group>";
 		};
 		F94B3F80C688EF756F22044D /* Frameworks */ = {
@@ -333,7 +382,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = B558DF941BD34CD20010BB56;
@@ -354,9 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B558DFB31BD34CD30010BB56 /* LaunchScreen.storyboard in Resources */,
-				B52546411BD84BE0004813D7 /* no_picture.jpg in Resources */,
 				B558DFB01BD34CD30010BB56 /* Assets.xcassets in Resources */,
 				B558DFAB1BD34CD30010BB56 /* Main.storyboard in Resources */,
+				B5E99A7E1BDBF54D00EB0844 /* CreateAd.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,18 +477,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B558DFA81BD34CD20010BB56 /* ViewController.m in Sources */,
-				B59171F41BD74C1C00C03618 /* SelectTypeOfSubjectController.m in Sources */,
+				B5E99A8E1BDC0F8900EB0844 /* DisplayAdViewController.m in Sources */,
+				B5E99A821BDBF59400EB0844 /* CreateAdViewController.m in Sources */,
 				B558DFA51BD34CD20010BB56 /* AppDelegate.m in Sources */,
+				B5E99A851BDBFF3400EB0844 /* EnterTitleViewController.m in Sources */,
 				B5B145391BD354F40042F859 /* AZLogInViewController.m in Sources */,
-				B5C4FB371BD49F5B007864BD /* AdsDisplayController.m in Sources */,
-				B59171FB1BD7504500C03618 /* SubjectsController.m in Sources */,
 				B5B1453C1BD363490042F859 /* CreateUserViewController.m in Sources */,
-				B5C4FB331BD49538007864BD /* CreateAdViewController.m in Sources */,
+				B5E99A6E1BDB529A00EB0844 /* PlacesViewController.m in Sources */,
 				B558DFAE1BD34CD30010BB56 /* projectForNick.xcdatamodeld in Sources */,
-				B525463C1BD80D8C004813D7 /* UIFont+SystemFontOverride.m in Sources */,
 				B5C4FB3B1BD49FDD007864BD /* Ad.m in Sources */,
+				B5E99A881BDC082100EB0844 /* EnterTextViewController.m in Sources */,
+				B5E99A5D1BDAA8E900EB0844 /* AllAdsViewController.m in Sources */,
+				B5E99A691BDB466300EB0844 /* MainTabBarController.m in Sources */,
 				B558DFA21BD34CD20010BB56 /* main.m in Sources */,
+				B5E99A8B1BDC0C9900EB0844 /* UIViewController+AddHelpers.m in Sources */,
+				B5E99A721BDB549D00EB0844 /* AllAdsViewControllerCell.m in Sources */,
+				B5E99A911BDC142700EB0844 /* AllAdsBuyCategoryTableViewController.m in Sources */,
+				B5E99A5A1BDAA7F100EB0844 /* AccountViewController.m in Sources */,
 				B59171F81BD74F9100C03618 /* AZDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

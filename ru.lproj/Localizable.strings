@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  NYCRussianAds
+
+  Created by Andrii Zykov on 10/22/15.
+  Copyright © 2015 AndriiZykov. All rights reserved.
+*/
+
+
+"New" = "Новые";
+"Jobs/Find" = "Работа/Ищу";
+"Jobs/Hiring" = "Работа/Требуються";
+"For Sale" = "Продам";
+"Wanted" = "Куплю";
+"Dates/Events/MeetUps" = "Встречи/Знакомства/События";
+"Services" = "Услуги";
+"Housing"  = "Жилье";
+"Categories" = "Темы";
+"Add Picture" = "Добавить картинку";
+"Change Prifile Picture"= "Изменить картинку?";
+"Delete picture" = "Удалить?";
+"New picture" = "Сделать снимок?";
+"Cancel" = "Отмена";
+"Take From Galary" = "Взять из галереи?";

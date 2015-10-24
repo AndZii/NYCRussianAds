@@ -11,4 +11,5 @@
 @interface AZDataManager : NSObject
 +(NSArray*) getSubjectTypes;
 +(NSArray*) getSubjectsWithType:(NSString*)type;
++(NSArray*) getDetalesForSubjects;
 @end

@@ -8,24 +8,25 @@
 
 #import "CreateAdViewController.h"
 #import <Parse/Parse.h>
-@interface CreateAdViewController ()
+@interface CreateAdViewController () <UITextFieldDelegate, UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 
 @property (weak, nonatomic) IBOutlet UITextView *textAdField;
+
 @property (weak, nonatomic) IBOutlet UILabel *SubjectLable;
 
 @end
 
 @implementation CreateAdViewController
 
--(void) cancelButton:(UIBarButtonItem *)sender {
-    
-}
-
 -(void) viewDidLoad {
     
     [super viewDidLoad];
+    
+    self.textAdField.delegate = self;
+    
+    self.titleTextField.delegate = self;
     
     self.SubjectLable.text = [NSString stringWithFormat:@"%@ %@", self.SubjectLable.text,  self.subject];
     
@@ -34,6 +35,28 @@
 - (void)viewDidAppear:(BOOL)animated {
     
     [super viewDidAppear:YES];
+    
+}
+
+#pragma mark UITextFieldDelagate && UITextViewDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+
+    if ([textField isEqual:self.titleTextField]) {
+        
+        [self.textAdField becomeFirstResponder];
+        
+    }
+    
+    return YES;
+    
+}
+
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView{
+    
+    NSLog(@"HOI");
+    
+    return YES;
     
 }
 
@@ -75,6 +98,12 @@
     }];
     
    
+    
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    [[self view] endEditing:TRUE];
     
 }
 

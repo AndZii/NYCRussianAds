@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
 @interface Ad : NSObject
-@property (strong, nonatomic) PFUser   * posted_by;
+@property (strong, nonatomic) PFRelation * posted_by;
 @property (strong, nonatomic) NSString * title;
 @property (strong, nonatomic) NSString * text;
 @property (strong, nonatomic) NSString * subject;
 @property (strong, nonatomic) NSDate   * created_at;
 
-
++(Ad* ) getAdWithParseObject:(PFObject *) obj;
 +(NSArray *) fetchAdsFromServerWithArray:(NSArray *) ads;
 
 @end

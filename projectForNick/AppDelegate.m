@@ -10,7 +10,9 @@
 #import <Parse/Parse.h>
 #import "AZLogInViewController.h"
 #import <UIKit/UIKit.h>
-
+#import "AZLogInViewController.h"
+#import "AccountViewController.h"
+#import "AllAdsViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +25,30 @@
     [Parse setApplicationId:@"YH96hP9QGrr4UAiqInMDJ5jZqxIBp7s7uUVVy7ky"
                   clientKey:@"0jBPsiAyZ1TNKUZIQMgbvTBbSqBpI85TRfIOaRer"];
     
+    UIStoryboard * mainStoryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    [PFUser logOut];
+    
+    NSString * username = [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
+    NSString * password = [[NSUserDefaults standardUserDefaults] objectForKey:@"password"];
+    
+    if (username && password) {
+        [PFUser logInWithUsername:username password:password];
+    } 
+    
+    
+
+    if (![PFUser currentUser]) {
+        
+            AZLogInViewController * loginViewController = [mainStoryBoard instantiateViewControllerWithIdentifier:@"LogInViewController"];
+        
+        [self.window makeKeyAndVisible];
+        
+        [self.window.rootViewController presentViewController:loginViewController animated:YES completion:nil];
+        
+    }
+    
+
     return YES;
 }
 

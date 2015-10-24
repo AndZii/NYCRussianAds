@@ -16,24 +16,28 @@
     
     for (PFObject * obj in ads){
         
-        Ad * ad = [Ad new];
-        
-        ad.title = [obj objectForKey:@"Title"];
-        
-        ad.text = [obj objectForKey:@"Text"];
-        
-        ad.subject = [obj objectForKey:@"Subject"];
-        
-        PFObject * user = [obj objectForKey:@"posted_by"];
-        
-        ad.posted_by = (PFUser*) user;
-        
-        ad.created_at =  [obj valueForKey:@"createdAt"];
-        
-        [adsArray addObject:ad];
+        [adsArray addObject:[self getAdWithParseObject:obj]];
     }
     
     return adsArray;
+    
+}
+
++(Ad* ) getAdWithParseObject:(PFObject *) obj {
+    
+    Ad * ad = [Ad new];
+    
+    ad.title = [obj objectForKey:@"Title"];
+    
+    ad.text = [obj objectForKey:@"Text"];
+    
+    ad.subject = [obj objectForKey:@"Subject"];
+    
+    ad.posted_by = [obj objectForKey:@"posted_by"];
+    
+    ad.created_at =  [obj valueForKey:@"createdAt"];
+    
+    return ad;
     
 }
 

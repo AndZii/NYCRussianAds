@@ -12,6 +12,4 @@
 
 @property (strong, nonatomic) NSString * subject;
 
--(void) cancelButton:(UIBarButtonItem *) sender;
-
 @end

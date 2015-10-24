@@ -13,21 +13,36 @@
 +(NSArray*) getSubjectTypes{
     
     return @[
-                               @"Новые",
-                               @"Работа/ищу",
-                               @"Работа/предлогаю",
-                               @"Куплю",
-                               @"Продам",
-                               @"Знакомства",
-                               @"Услуги",
-                               @"Жилье"
+                               NSLocalizedString(@"New", nil),
+                               NSLocalizedString(@"Jobs/Find", nil),
+                               NSLocalizedString(@"Jobs/Hiring", nil),
+                               NSLocalizedString(@"For Sale", nil),
+                               NSLocalizedString(@"Wanted", nil),
+                               NSLocalizedString(@"Dates/Events/Meet Ups", nil),
+                               NSLocalizedString(@"Services", nil),
+                               NSLocalizedString(@"Housing", nil)
                                ];
+}
+
++(NSArray*) getDetalesForSubjects {
+    
+    return @[
+             NSLocalizedString(@"20 newest ads from all categories", nil),
+             NSLocalizedString(@"Employees looking for jobs", nil),
+             NSLocalizedString(@"Here employers post their ads", nil),
+             NSLocalizedString(@"Lot of items for sale", nil),
+             NSLocalizedString(@"", nil),
+             NSLocalizedString(@"", nil),
+             NSLocalizedString(@"", nil),
+             NSLocalizedString(@"Rent house, apartment, room etc...", nil)
+             ];
+    
 }
 
 +(NSArray*) getSubjectsWithType:(NSString*)type {
   
     
-    if ([type isEqualToString:@"Работа/ищу"] || [type isEqualToString:@"Работа/предлогаю"] ) {
+    if ([type isEqualToString:NSLocalizedString(@"Jobs/Find", nil)] || [type isEqualToString:NSLocalizedString(@"Jobs/Hiring", nil)] ) {
         return @[
                  @"Гостиницы, мотели",
                  @"Программирование, интернет",
